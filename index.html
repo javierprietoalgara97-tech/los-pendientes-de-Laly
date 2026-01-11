@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enar Artesanía - Joyería Artesanal Única</title>
+    <meta name="description"
+        content="Pendientes y joyería artesanal hecha a mano con diseño único y materiales naturales.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">Enar Artesanía</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#shop">Colección</a></li>
+                <li><a href="#about">Taller</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="cart-icon" aria-label="Carrito">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Hecho a mano con alma</span>
+                <h1>Belleza Orgánica <br>& Diseño Atemporal</h1>
+                <p>Piezas únicas de metal y arcilla inspiradas en la naturaleza.</p>
+                <a href="#shop" class="cta-button">Ver Colección</a>
+            </div>
+            <div class="hero-image-container fade-in-up">
+                <img src="images/hero.png" alt="Pendientes artesanales de arcilla y oro en piedra natural">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
