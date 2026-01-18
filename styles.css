@@ -93,20 +93,21 @@ a {
     border-bottom: 1px solid rgba(197, 160, 89, 0.1);
 }
 
-/* Scroll State: Black Background */
+/* Header Scroll State - Forced */
 .site-header.scrolled {
-    background-color: #000000;
+    background-color: #000000 !important;
     padding: var(--spacing-xs) var(--spacing-lg);
     border-bottom: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .site-header.scrolled .nav-links a {
-    color: #ffffff;
+    color: #ffffff !important;
     /* White text for contrast on black */
 }
 
 .site-header.scrolled .logo-text {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 /* Logo */
@@ -212,29 +213,7 @@ a {
     color: #555;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    border: 1px solid var(--primary-beige);
-    background: var(--primary-beige);
-    /* Beige Background */
-    color: #ffffff;
-    /* White Text */
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: var(--transition-smooth);
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background: #dcd8cc;
-    /* Darker beige on hover */
-    border-color: #dcd8cc;
-    transform: translateY(-2px);
-}
-
+/* Legacy CTA removed - used forced style at top */
 .hero-image-container {
     flex: 1;
     height: 80vh;
