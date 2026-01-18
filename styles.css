@@ -79,37 +79,62 @@ a {
 
 /* Header */
 .site-header {
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    /* Reduced padding for better scroll look */
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
+    transition: background-color 0.4s ease, padding 0.4s ease;
     background: rgba(253, 252, 248, 0.95);
     backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(197, 160, 89, 0.1);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+/* Scroll State: Black Background */
+.site-header.scrolled {
+    background-color: #000000;
+    padding: var(--spacing-xs) var(--spacing-lg);
+    border-bottom: none;
 }
 
+.site-header.scrolled .nav-links a {
+    color: #ffffff;
+    /* White text for contrast on black */
+}
+
+.site-header.scrolled .logo-text {
+    color: #ffffff;
+}
+
+/* Logo */
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: var(--primary-clay);
+    font-family: var(--font-heading);
 }
 
 .nav-links {
     display: flex;
     gap: var(--spacing-md);
     list-style: none;
+    align-items: center;
 }
 
 .nav-links a {
@@ -118,22 +143,26 @@ a {
     letter-spacing: 0.1em;
     color: var(--text-charcoal);
     position: relative;
+    padding: 5px 10px;
+    /* Padding for hover block effect */
+    transition: all 0.3s ease;
+    border-radius: 2px;
 }
 
+/* Nav Link Hover: Invert Colors */
+.nav-links a:hover {
+    background-color: var(--text-charcoal);
+    color: var(--bg-white);
+}
+
+.site-header.scrolled .nav-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Remove old underline effect and use invert instead */
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--accent-gold);
-    transition: var(--transition-smooth);
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
+    display: none;
 }
 
 .cart-icon {
@@ -186,19 +215,24 @@ a {
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
-    border: 1px solid var(--text-charcoal);
-    background: transparent;
-    color: var(--text-charcoal);
+    border: 1px solid var(--primary-beige);
+    background: var(--primary-beige);
+    /* Beige Background */
+    color: #ffffff;
+    /* White Text */
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     transition: var(--transition-smooth);
+    cursor: pointer;
 }
 
 .cta-button:hover {
-    background: var(--primary-clay);
-    border-color: var(--primary-clay);
-    color: #fff;
+    background: #dcd8cc;
+    /* Darker beige on hover */
+    border-color: #dcd8cc;
+    transform: translateY(-2px);
 }
 
 .hero-image-container {
@@ -275,6 +309,11 @@ a {
         height: 2px;
         background-color: var(--text-charcoal);
         transition: var(--transition-smooth);
+    }
+
+    .site-header.scrolled .hamburger span {
+        background-color: #ffffff;
+        /* White hamburger on black header */
     }
 
     /* Hamburger animation when active */
