@@ -116,11 +116,17 @@ a {
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    z-index: 101;
+    /* Ensure above other elements */
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
+    /* Explicit height */
     width: auto;
+    display: block;
+    /* Remove inline spacing issues */
+    object-fit: contain;
 }
 
 .logo-text {
@@ -390,18 +396,27 @@ a {
 .product-image {
     width: 100%;
     aspect-ratio: 1;
-    background-color: #eee;
+    background-color: #f9f9f9;
     margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-radius: 4px;
+    /* Optional: Slight rounding */
 }
 
-.placeholder-img {
-    color: var(--text-grey);
-    font-size: 0.9rem;
-    letter-spacing: 0.05em;
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures images fill the square without distortion */
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
 }
 
 .product-card h3 {
