@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enar Artesanía - Joyería Artesanal Única</title>
+    <title>LospendientesdeLALY - Pendientes Artesanales Hechos a Mano</title>
     <meta name="description"
-        content="Pendientes y joyería artesanal hecha a mano con diseño único y materiales naturales.">
+        content="Pendientes artesanales hechos a mano con amor. Piezas únicas que transmiten autenticidad y elegancia.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +21,19 @@
 <body>
     <header class="site-header">
         <nav class="navbar">
-            <div class="logo">Enar Artesanía</div>
+            <div class="logo">
+                <img src="images/logo.png" alt="LospendientesdeLALY Logo" style="height: 60px;">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Inicio</a></li>
-                <li><a href="#shop">Colección</a></li>
-                <li><a href="#about">Taller</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#collection">Nuestras piezas</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
-            <div class="cart-icon" aria-label="Carrito">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
-                <span id="cart-count">0</span>
+            <div class="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
@@ -42,16 +41,135 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <span class="eyebrow">Hecho a mano con alma</span>
-                <h1>Belleza Orgánica <br>& Diseño Atemporal</h1>
-                <p>Piezas únicas de metal y arcilla inspiradas en la naturaleza.</p>
-                <a href="#shop" class="cta-button">Ver Colección</a>
+                <span class="eyebrow">Artesanía hecha con el corazón</span>
+                <h1>Más que pendientes,<br>pequeñas historias</h1>
+                <p>Piezas únicas hechas a mano que celebran la autenticidad y el detalle.</p>
+                <a href="#contact" class="cta-button">Contactar ahora</a>
             </div>
             <div class="hero-image-container fade-in-up">
-                <img src="images/hero.png" alt="Pendientes artesanales de arcilla y oro en piedra natural">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=2070&auto=format&fit=crop"
+                    alt="Pendientes artesanales minimalistas">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container container-split">
+                <div class="text-content fade-in-up">
+                    <span class="eyebrow">Sobre nosotros</span>
+                    <h2>La esencia de lo hecho a mano</h2>
+                    <p>En un mundo lleno de prisa y producción masiva, <strong>LospendientesdeLALY</strong> nace como un
+                        refugio de creatividad y paciencia.</p>
+                    <p>Cada pieza es modelada a mano por mi madre, Laly, quien pone su alma en cada detalle. Utilizamos
+                        materiales ligeros y de calidad para crear joyas que no solo adornan, sino que cuentan una
+                        historia.</p>
+                </div>
+                <div class="image-content fade-in-up delay-100">
+                    <img src="https://images.unsplash.com/photo-1610214652286-0731450a8047?q=80&w=1974&auto=format&fit=crop"
+                        alt="Proceso artesanal">
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Preview (Placeholder for future images) -->
+        <section id="collection" class="section-padding bg-cream">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <span class="eyebrow">Nuestras Piezas</span>
+                    <h2>Colección Actual</h2>
+                </div>
+                <div class="product-grid">
+                    <!-- Placeholder Product 1 -->
+                    <div class="product-card fade-in-up delay-100">
+                        <div class="product-image">
+                            <!-- Placeholder: Replace with real image later -->
+                            <div class="placeholder-img">Imagen Pendiente 1</div>
+                        </div>
+                        <h3>Modelo "Alba"</h3>
+                        <p>Tonos tierra y textura orgánica.</p>
+                    </div>
+                    <!-- Placeholder Product 2 -->
+                    <div class="product-card fade-in-up delay-200">
+                        <div class="product-image">
+                            <div class="placeholder-img">Imagen Pendiente 2</div>
+                        </div>
+                        <h3>Modelo "Luna"</h3>
+                        <p>Diseño minimalista en blanco y dorado.</p>
+                    </div>
+                    <!-- Placeholder Product 3 -->
+                    <div class="product-card fade-in-up delay-300">
+                        <div class="product-image">
+                            <div class="placeholder-img">Imagen Pendiente 3</div>
+                        </div>
+                        <h3>Modelo "Tierra"</h3>
+                        <p>Inspirado en la naturaleza viva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container container-narrow">
+                <div class="section-header text-center fade-in-up">
+                    <span class="eyebrow">Hablemos</span>
+                    <h2>Contacto</h2>
+                    <p>Si te interesa alguna pieza o tienes una idea especial, escríbenos.</p>
+                </div>
+
+                <form action="https://formsubmit.co/your-email@example.com" method="POST"
+                    class="contact-form fade-in-up delay-100">
+                    <!-- Spam config: Remove this input or set to your email -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje - LospendientesdeLALY">
+
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono (Opcional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Me gustaría saber más sobre..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding bg-cream">
+            <div class="container container-narrow">
+                <div class="section-header text-center">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>¿Hacéis envíos?</h3>
+                        <p>Sí, realizamos envíos a toda la península. Para islas, consúltanos.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Son piezas únicas?</h3>
+                        <p>Absolutamente. Al ser hechas a mano, ninguna pieza es idéntica a otra.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 LospendientesdeLALY. Hecho a mano con amor.</p>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
